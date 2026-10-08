@@ -20,7 +20,6 @@ def add_book(books):
     title = input("Enter book title: ")
     author = input("Enter author name: ")
 
-    # Find the highest existing ID and add 1 to make it unique
     if books:
         new_id = max(book["id"] for book in books) + 1
     else:

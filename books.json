@@ -1,14 +1,14 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "title": "on the way ",
-        "author": "john",
+        "author": "john ",
         "status": "Available"
     },
     {
         "id": 2,
-        "title": "premchad ki khani ",
-        "author": "manohar",
+        "title": "prem chand ki kahani ",
+        "author": "tulsi das",
         "status": "Available"
     }
 ]

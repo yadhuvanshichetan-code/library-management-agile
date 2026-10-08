@@ -19,15 +19,22 @@ def save_books(books):
 def add_book(books):
     title = input("Enter book title: ")
     author = input("Enter author name: ")
+
+    # Find the highest existing ID and add 1 to make it unique
+    if books:
+        new_id = max(book["id"] for book in books) + 1
+    else:
+        new_id = 1
+
     book = {
-        "id": len(books) + 1,
+        "id": new_id,
         "title": title,
         "author": author,
         "status": "Available"
     }
     books.append(book)
     save_books(books)
-    print(f"Book '{title}' added successfully!")
+    print(f"Book '{title}' added successfully with ID {new_id}!")
 
 
 def view_books(books):
